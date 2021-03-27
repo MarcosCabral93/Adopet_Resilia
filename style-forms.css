@@ -3,7 +3,6 @@
 * {
     font-family: 'arial';
     font-weight: bold;
-    
     text-decoration: none;
 }
 
@@ -48,7 +47,7 @@
 
 /* ajustando itens*/
 
-/*mudar as cores apos a conclusao*/
+
 
 .cabecalho-item {
     font-size: 20px;
@@ -72,17 +71,70 @@
     font-size: 45px;
 }
 
+
+
+
 /* Ajustando o corpo*/
 main{
     background-color: beige;
     padding: 50px 0;
 
 }
+.titulo-corpo{
+    text-align: center;
+    font-size: 40px;
+    margin: 70px 0;
+}
 .plotagem{
-    width: 95%;
+    padding: 50px 0;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
+    text-align: center;
+    display: flex;
+}  
+
+.container-formulario{
+    width: 40%;
+    height: 500px;
+    border: solid 2px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: azure;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 2px 0 0 0;   
+    align-items: center;
+    height: 300px;
+    justify-content: space-around;
+    }
+   
+
+input{
+    border-radius: 30px;
+    width: 200px;
+}
+#data{
+    width: auto;
+    text-align: center;
+}
+
+
+button{
+    border-radius: 50px;
+    background-color:black;
+    color: #fad000;
+    width: 200px;
+    min-height: 30px;
+    font-size: 20px;
+}
+
 /* ajustando as imgs*/
 /*Imagem Principal*/
 .img-principal {
@@ -128,17 +180,6 @@ margin: 15px 0;
     height: 246px;
     margin: 10px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 /* foooter*/
 
 footer {
@@ -171,26 +212,3 @@ footer {
     width: 100%;
     
 }
-
-/* pagina Responsivel
-        @media (max-width: 700px) {
-    .esquerdo{
-        display: none;
-    }
-    .direito{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: gold;
-        width: 100%;
- }
- body{
-          background-color: black;
-    }
-     .itens{
-         background-color: black;
-         color: gold;
-         
-        }      
-}*/
