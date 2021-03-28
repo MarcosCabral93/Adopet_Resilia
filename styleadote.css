@@ -94,8 +94,13 @@ main{
     margin: 15px 0;
 }
 .img-principal h3{
+    background-color: rgba(0, 225, 255, 0.548);
+
+}
+.img-principal h3{
     font-size: 30px;
     font-family: monospace;
+    display: inline-block;
     } 
     
 
@@ -171,26 +176,47 @@ footer {
     width: 100%;
     
 }
-
-/* pagina Responsivel
-        @media (max-width: 700px) {
-    .esquerdo{
+     @media (max-width: 700px) {
+        .cabecalho{
+            height: 200px;
+        }
+    .container-cima img{
         display: none;
     }
-    .direito{
+    .container-cima h1{
+        display: none;
+    }
+    .cabecalho-nav{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        background-color: gold;
+        background-color: black;
         width: 100%;
- }
- body{
-          background-color: black;
     }
-     .itens{
-         background-color: black;
-         color: gold;
-         
-        }      
-}*/
+    .cabecalho-item{
+        margin: 2% 0;
+    }
+    }
+     .plotagem{
+         width: 100%;       
+        }
+
+        .lista-img img{
+            width: 150px;
+            height:200px;
+            margin: 10px 0;
+        }    
+        .img{
+            margin: 50px 2%;
+            border: solid 5px black;
+            border-radius: 10px;
+            padding: 15px;
+            width: 60%;
+            height: 250px; ;
+        }
+        #ultimaimg{
+            width: 150px;
+            height:200px;
+
+        }
