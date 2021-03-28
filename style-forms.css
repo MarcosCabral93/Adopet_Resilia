@@ -47,8 +47,6 @@
 
 /* ajustando itens*/
 
-
-
 .cabecalho-item {
     font-size: 20px;
     margin: 0 2%;
@@ -67,34 +65,33 @@
 }
 
 .titulo a:hover {
-   background-color: grey;
+    background-color: grey;
     font-size: 45px;
 }
 
-
-
-
 /* Ajustando o corpo*/
-main{
+
+main {
     background-color: beige;
     padding: 50px 0;
-
 }
-.titulo-corpo{
+
+.titulo-corpo {
     text-align: center;
     font-size: 40px;
     margin: 70px 0;
 }
-.plotagem{
-    padding: 50px 0;
+
+.plotagem {
+    padding: 50px;
     width: 90%;
     height: 100%;
     margin: 0 auto;
     text-align: center;
     display: flex;
-}  
+}
 
-.container-formulario{
+.container-formulario {
     width: 40%;
     height: 500px;
     border: solid 2px black;
@@ -104,82 +101,65 @@ main{
     justify-content: space-around;
     margin: 0 auto;
     background-color: azure;
+    padding: 10px;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
-    margin: 2px 0 0 0;   
+    margin: 2px 0 0 0;
     align-items: center;
     height: 300px;
     justify-content: space-around;
-    }
-   
+}
 
-input{
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container-formulario h2 {
+    font-size: 25px;
+    padding: 5px;
+    border-bottom: 3px solid black;
+    color: blue;
+    text-shadow: rgb(20, 197, 220) 2px 2px 2px;
+    font-family: sans-serif;
+}
+
+.container-formulario h3 {
+    font-size: 20px;
+    color: blue;
+}
+
+.container-formulario p {
+    text-align: start;
+}
+
+.item {
+    margin-left: 4%;
+}
+
+.prenc {
+    margin-right: 4%;
+}
+
+input {
     border-radius: 30px;
     width: 200px;
 }
-#data{
-    width: auto;
-    text-align: center;
-}
 
-
-button{
+button {
     border-radius: 50px;
-    background-color:black;
+    background-color: black;
     color: #fad000;
     width: 200px;
     min-height: 30px;
     font-size: 20px;
 }
 
-/* ajustando as imgs*/
-/*Imagem Principal*/
-.img-principal {
-    text-align: center;
-    margin: 100px auto;
-}
-.leolenny{
-    width: 90%;
-    margin: 15px 0;
-}
-.img-principal h3{
-    font-size: 30px;
-    font-family: monospace;
-    } 
-    
-
-
-.lista-img img{
-    width:470px;
-    height: 246px;
-    margin: 10px 0;
-}
-.lista-img name{
-font-size: 20px;
-margin: 15px 0;
-
-}
-.img{
-    margin: 50px 2%;
-    border: solid 5px black;
-    border-radius: 10px;
-    padding: 15px;
-}
-.lista-img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-
-}
-#ultimaimg{
-    width: 300px;
-    height: 246px;
-    margin: 10px 0;
-}
 /* foooter*/
 
 footer {
@@ -203,12 +183,60 @@ footer {
 .rodape {
     font-size: 13px;
     color: white;
-   font-style: italic;
+    font-style: italic;
 }
-.itens-rodape{
+
+.itens-rodape {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    
+}
+
+@media (max-width: 700px) {
+    .cabecalho {
+        height: 200px;
+    }
+    .titulo-corpo {
+        text-align: center;
+        font-size: 30px;
+        padding: 5px;
+        color: blue;
+        text-shadow: rgb(20, 197, 220) 2px 2px 2px;
+        font-family: sans-serif;
+        margin: 70px 0;
+    }
+    .container-cima img {
+        display: none;
+    }
+    .container-cima h1 {
+        display: none;
+    }
+    .cabecalho-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        width: 100%;
+    }
+    .cabecalho-item {
+        margin: 2% 0;
+    }
+    .plotagem {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-formulario {
+        width: 100%;
+        padding:5px;
+    }
+    .plotagem img {
+        width: 80%px;
+        height: 400px;
+        margin: 10px 0;
+    }
 }
