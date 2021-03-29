@@ -90,7 +90,12 @@ main {
     text-align: center;
     display: flex;
 }
-
+.plotagem img{
+    width: 40%;
+    height: 500px;
+    border:  5px;
+    border-radius: 5px;
+}
 .container-formulario {
     width: 40%;
     height: 500px;
@@ -135,7 +140,8 @@ form div {
 }
 
 .container-formulario p {
-    text-align: start;
+    text-align: justify;
+    
 }
 
 .item {
@@ -148,7 +154,8 @@ form div {
 
 input {
     border-radius: 30px;
-    width: 200px;
+    width: 275px;
+    background-color: rgba(53, 183, 235, 0.475);
 }
 
 button {
